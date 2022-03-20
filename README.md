@@ -9,3 +9,6 @@ EatFast Restaurant is a web application that helps in the management of a restau
  ## UML
  ### Use case Diagram
   <img src="UML/eatFast_use_case.jpg" width="800" title="User Story">
+
+  ### Class Diagram
+  <img src="UML/EatFast_Class_Diagram.png" width="800" title="User Story">
