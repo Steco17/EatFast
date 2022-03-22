@@ -17,3 +17,8 @@ EatFast Restaurant is a web application that helps in the management of a restau
 
   #### User Flow charts
 <img src="UML/user_flow_chart.jpg" width="800" title="User Flow Chart">
+
+#### Admin Flow charts
+
+<img src="UML/CRUD_account_flowchart.vpd.jpg" width="800" title="User Flow Chart">
+<img src="CRUD_Menu Flowchart.jpg" width="800" title="User Flow Chart">
