@@ -58,7 +58,7 @@ def login_page(request):
             # Redirect to a success page.
             print(request.user.is_authenticated)
             #context['form'] = LoginForm()
-            return redirect("login/")
+            return redirect("index")
         else:
             # Return an 'invalid login' error message.
             print('Error')
@@ -66,7 +66,7 @@ def login_page(request):
     context = {
         'title':'Login',
     }
-    context['form'] = LoginForm()
+    context['form'] = form
  
 
     return render(request, "auth/login.html",context )
