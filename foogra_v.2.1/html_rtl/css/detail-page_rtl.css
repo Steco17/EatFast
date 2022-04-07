@@ -1,0 +1,159 @@
+.box_booking a.close_panel_mobile {
+  right: auto;
+  left: 10px;
+}
+@media (max-width: 767px) {
+  .box_booking.mobile_fixed .btn_1_mobile {
+    left: auto;
+    right: 0;
+  }
+}
+
+.ui-datepicker .ui-datepicker-prev:before {
+  content: "\35";
+}
+
+.ui-datepicker .ui-datepicker-next:before {
+  content: "\34";
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: auto;
+  right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: auto;
+  left: 2px;
+}
+
+@media (max-width: 767px) {
+  .tabs_detail .tab-content .card-header a:after {
+    float: left;
+  }
+}
+
+.info_content .menu_item em {
+  float: left;
+}
+
+/* Menu items with thumbs */
+.menu_item.thumbs {
+  padding-left: 0;
+  padding-right: 100px;
+}
+.menu_item.thumbs figure {
+  left: auto;
+  right: 0;
+}
+.menu_item.thumbs p {
+  padding-right: 0;
+  padding-left: 80px;
+}
+@media (max-width: 767px) {
+  .menu_item.thumbs p {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding-left: 0;
+  }
+}
+
+.reviews #review_summary {
+  text-align: center;
+  background-color: #1f2f6a;
+  color: #fff;
+  padding: 20px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 991px) {
+  .reviews #review_summary {
+    margin-bottom: 15px;
+  }
+}
+.reviews #review_summary strong {
+  font-size: 42px;
+  font-size: 2.625rem;
+  display: block;
+  line-height: 1;
+}
+.reviews #review_summary em {
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+}
+.reviews .progress {
+  margin-bottom: 12px;
+  height: 5px;
+}
+.reviews .progress-bar {
+  background-color: #589442;
+}
+.reviews .reviews_sum_details h6 {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.reviews .reviews_sum_details strong {
+  position: relative;
+  top: -8px;
+}
+
+@media (max-width: 767px) {
+  .review_card .user_info figure {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .review_card .user_info h5 {
+    float: right;
+    margin: 18px 15px 0 0;
+  }
+}
+.review_card .review_content .rating {
+  float: right;
+}
+@media (max-width: 575px) {
+  .review_card .review_content .rating {
+    float: none;
+  }
+}
+@media (max-width: 575px) {
+  .review_card .review_content .rating em {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+.review_card .review_content em {
+  float: left;
+}
+@media (max-width: 575px) {
+  .review_card .review_content em {
+    float: none;
+    display: block;
+    margin-right: 0;
+  }
+}
+.review_card .review_content ul li {
+  margin-left: 0;
+}
+.review_card .review_content ul li:last-child {
+  float: left;
+  margin-left: 0;
+}
+.review_card .reply .review_content {
+  border-left: none;
+  border-right: 5px solid #ededed;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.dropdown a:after {
+  right: auto;
+  left: 10px;
+}
+
+.follow_us_detail a {
+  margin: 5px 0 0 5px;
+}

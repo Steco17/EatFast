@@ -1,0 +1,47 @@
+.box_booking .main ul li a {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.box_booking .main ul li span {
+  float: left;
+}
+
+.box_booking .main ul li a:before {
+  left: auto;
+  right: 0;
+}
+
+/*-------- Menu list --------*/
+.table.cart-list td figure {
+  float: right;
+  margin-right: 0;
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  .table.cart-list td figure {
+    float: none;
+  }
+}
+.table.cart-list td .dropdown-menu {
+  margin-left: 0;
+  margin-right: -260px !important;
+}
+@media (max-width: 991px) {
+  .table.cart-list td .dropdown-menu {
+    margin-right: -175px !important;
+  }
+}
+.table.cart-list td .dropdown-menu ul li label small {
+  float: left;
+}
+
+#message {
+  left: auto;
+  right: 15px;
+  padding: 12px 40px 10px 12px;
+}
+#message:before {
+  left: auto;
+  right: 10px;
+}

@@ -1,0 +1,210 @@
+@import 'variables';
+@import 'mixin';
+
+.box_booking {
+
+    a.close_panel_mobile {
+        right: auto;
+        left: 10px;
+    }
+
+    &.mobile_fixed {
+        @include mobile {
+
+            .btn_1_mobile {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
+
+.ui-datepicker .ui-datepicker-prev:before {
+    content: "\35";
+}
+
+.ui-datepicker .ui-datepicker-next:before {
+    content: "\34";
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: auto;
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: auto;
+    left: 2px;
+}
+
+.tabs_detail {
+    @media(max-width: 767px) {
+        .tab-content {
+
+            .card-header {
+                a {
+                    &:after {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info_content {
+    .menu_item {
+
+        em {
+            float: left;
+        }
+    }
+}
+
+/* Menu items with thumbs */
+.menu_item.thumbs {
+    padding-left: 0;
+    padding-right: 100px;
+
+    figure {
+        left: auto;
+        right: 0;
+    }
+
+    p {
+        padding-right: 0;
+        padding-left: 80px;
+
+        @include mobile {
+            @include fontSize(13px);
+            padding-left: 0;
+        }
+    }
+}
+
+.reviews {
+    #review_summary {
+        text-align: center;
+        background-color: $color-2;
+        color: #fff;
+        padding: 20px 10px;
+        @include border-radius(5px);
+
+        @include tablet {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            @include fontSize(42px);
+            display: block;
+            line-height: $line-height-none;
+        }
+
+        em {
+            font-style: normal;
+            font-weight: 500;
+            display: block;
+        }
+    }
+
+    .progress {
+        margin-bottom: 12px;
+        height: 5px;
+    }
+
+    .progress-bar {
+        background-color: $color-1;
+    }
+
+    .reviews_sum_details {
+        h6 {
+            @include fontSize(14px);
+        }
+
+        strong {
+            position: relative;
+            top: -8px;
+        }
+    }
+}
+
+.review_card {
+    .user_info {
+        figure {
+            @include mobile {
+                float: right;
+            }
+        }
+
+        h5 {
+            @include mobile {
+                float: right;
+                margin: 18px 15px 0 0;
+            }
+        }
+    }
+
+    .review_content {
+        .rating {
+            float: right;
+            @include extra-small-mobile {
+                    float:none;
+                }
+
+            em {
+                @include extra-small-mobile {
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        em {
+            float: left;
+
+            @include extra-small-mobile {
+                float: none;
+                display: block;
+                margin-right: 0;
+            }
+        }
+
+        ul {
+            li {
+                margin-left: 0;
+
+                &:last-child {
+                    float: left;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .reply {
+        .user_info {}
+
+        .review_content {
+            border-left: none;
+            border-right: 5px solid #ededed;
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+    }
+}
+
+.dropdown {
+    a {
+        &:after {
+            right: auto;
+            left: 10px;
+        }
+    }
+}
+
+
+.follow_us_detail a {
+    margin: 5px 0 0 5px;
+
+}

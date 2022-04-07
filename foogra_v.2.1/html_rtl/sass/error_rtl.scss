@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixin'; 
+
+.search_bar {
+	input[type='text'] {
+		padding-right: 15px;
+	}
+	input[type='submit'] {
+		right: auto;
+		left: -1px;
+		@include border-radius(3px 0 0 3px);
+	}
+}

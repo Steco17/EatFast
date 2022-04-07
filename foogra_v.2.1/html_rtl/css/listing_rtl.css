@@ -1,0 +1,114 @@
+.sort_select {
+  padding: 0 15px 15px 27px;
+}
+@media (max-width: 991px) {
+  .sort_select {
+    padding: 0 10px 0 27px;
+    float: right;
+  }
+}
+.sort_select:after {
+  right: auto;
+  left: 10px;
+}
+
+@media (max-width: 991px) {
+  a.btn_filters {
+    float: left;
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .filter_col {
+    transform: translateX(200%);
+    left: auto;
+    right: -100%;
+  }
+  .filter_col.show {
+    left: auto;
+    right: 0;
+  }
+}
+.filter_col .inner_bt {
+  text-align: left;
+}
+
+.filter_type label small {
+  float: left;
+}
+.filter_type h4 a:after {
+  right: auto;
+  left: 3px;
+}
+
+/* Filters full width */
+.filters_full .sort_select {
+  float: right;
+}
+.filters_full a.btn_filters {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+/* Filters Masonry */
+.switch-field {
+  float: right;
+}
+.switch-field label {
+  border-right: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+.switch-field label:first-of-type {
+  border-right: 0;
+}
+.switch-field label:last-of-type {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.map-right {
+  right: auto;
+  left: 0;
+}
+
+a.address:before {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/*-------- Map styles --------*/
+.marker_info {
+  text-align: right;
+}
+
+a.btn_infobox_detail {
+  right: inherit;
+  left: 15px;
+}
+
+.btn_infobox_get_directions,
+a.btn_infobox_phone {
+  padding-left: inherit;
+  padding-right: 20px;
+}
+
+.btn_infobox_get_directions:hover,
+a.btn_infobox_phone:hover {
+  color: #333;
+}
+
+.btn_infobox_get_directions:before {
+  left: inherit;
+  right: 0;
+}
+
+a.btn_infobox_phone:before {
+  left: inherit;
+  right: 0;
+}
+
+span.infobox_rate {
+  margin: -44px -20px 0 0;
+  float: right;
+  text-align: right;
+}
