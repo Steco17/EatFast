@@ -154,7 +154,7 @@
 			<div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
 				<div class="container">
 					<div class="row justify-content-center">
-						<div class="col-xl-9 col-lg-10 col-md-8">
+						<div class="col-xl-10 col-lg-12 col-md-8">
 							<h1>Discover &amp; Book</h1>
 							<p>The best restaurants at the best price</p>
 							<form method="post" action="grid-listing-filterscol.html">
@@ -165,11 +165,22 @@
 											<i class="icon_search"></i>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-4">
 										<div class="form-group">
-											<input class="form-control no_border_r" type="text" placeholder="Address, neighborhood...">
+											<input class="form-control" type="text" id="autocomplete" placeholder="Address, neighborhood...">
 											<i class="icon_pin_alt"></i>
 										</div>
+									</div>
+									<div class="col-lg-2 custom_select">
+										<select class="wide">
+											<option>All Categories</option>	
+											<option>Mexican</option>
+											<option>Italian</option>
+											<option>Japanese</option>
+											<option>Chinese</option>
+											<option>Burghers</option>
+											<option>Chinese</option>
+										</select>
 									</div>
 									<div class="col-lg-2">
 										<input type="submit" value="Search">
@@ -718,6 +729,32 @@
     <script src="js/common_scripts.min.js"></script>
     <script src="js/common_func.js"></script>
     <script src="assets/validate.js"></script>
+
+    <!-- Autocomplete -->
+    <script>
+    function initMap() {
+	  var input = document.getElementById('autocomplete');
+	  var autocomplete = new google.maps.places.Autocomplete(input);
+	 
+	  autocomplete.addListener('place_changed', function() {
+	    var place = autocomplete.getPlace();
+	    if (!place.geometry) {
+	      window.alert("Autocomplete's returned place contains no geometry");
+	      return;
+	    }
+
+	    var address = '';
+	    if (place.address_components) {
+	      address = [
+	        (place.address_components[0] && place.address_components[0].short_name || ''),
+	        (place.address_components[1] && place.address_components[1].short_name || ''),
+	        (place.address_components[2] && place.address_components[2].short_name || '')
+	      ].join(' ');
+	    } 
+	  });
+	}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script>
 
 </body>
 </html>
